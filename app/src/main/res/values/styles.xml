@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="TextAppearance.AppCompat.Title.AppBar">
+    <style name="TextAppearance.AppCompat.Title.Bold">
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">18sp</item>
-        <item name="lineHeight">28dp</item>
+        <item name="lineHeight">@dimen/dimen_28</item>
+        <item name="fontFamily">@font/iransansmobile</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Date">
+        <item name="color">@color/gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="lineHeight">@dimen/dimen_20</item>
+        <item name="fontFamily">@font/iransansmobile</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Content">
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">@dimen/dimen_28</item>
         <item name="fontFamily">@font/iransansmobile</item>
     </style>
 </resources>

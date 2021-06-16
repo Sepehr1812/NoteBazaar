@@ -10,10 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_56"
         android:visibility="gone"
-        app:constraint_referenced_ids="imageViewBackFolder, textViewNoteListFolderTitle, imageViewFolderMore" />
+        app:constraint_referenced_ids="imageViewFolderBack, textViewNoteListFolderTitle, imageViewFolderMore" />
 
     <ImageView
-        android:id="@+id/imageViewBackFolder"
+        android:id="@+id/imageViewFolderBack"
         android:layout_width="@dimen/dimen_18"
         android:layout_height="@dimen/dimen_18"
         android:layout_marginTop="@dimen/dimen_18"
@@ -25,7 +25,7 @@
 
     <TextView
         android:id="@+id/textViewNoteListTitle"
-        style="@style/TextAppearance.AppCompat.Title.AppBar"
+        style="@style/TextAppearance.AppCompat.Title.Bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_14"
@@ -36,14 +36,14 @@
 
     <TextView
         android:id="@+id/textViewNoteListFolderTitle"
-        style="@style/TextAppearance.AppCompat.Title.AppBar"
+        style="@style/TextAppearance.AppCompat.Title.Bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/dimen_28"
         android:text="@string/note_list_title"
-        app:layout_constraintBottom_toBottomOf="@id/imageViewBackFolder"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewBackFolder"
-        app:layout_constraintTop_toTopOf="@id/imageViewBackFolder" />
+        app:layout_constraintBottom_toBottomOf="@id/imageViewFolderBack"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFolderBack"
+        app:layout_constraintTop_toTopOf="@id/imageViewFolderBack" />
 
     <ImageView
         android:id="@+id/imageViewFolderMore"

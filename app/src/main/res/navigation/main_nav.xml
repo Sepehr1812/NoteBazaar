@@ -9,6 +9,22 @@
         android:id="@+id/noteListFragment"
         android:name="ir.cafebaazar.notebaazar.fragments.NoteListFragment"
         android:label="NoteListFragment"
-        tools:layout="@layout/fragment_note_list" />
+        tools:layout="@layout/fragment_note_list">
+
+        <action
+            android:id="@+id/action_noteListFragment_to_noteFragment"
+            app:destination="@id/noteFragment"
+            app:popUpTo="@layout/fragment_note_list" />
+
+        <action
+            android:id="@+id/action_noteListFragment_self"
+            app:destination="@id/noteListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="ir.cafebaazar.notebaazar.fragments.NoteFragment"
+        android:label="NoteFragment"
+        tools:layout="@layout/fragment_note" />
 
 </navigation>
