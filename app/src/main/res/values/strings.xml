@@ -12,6 +12,7 @@
     <string name="folder_new">پوشه جدید</string>
     <string name="folder_new_content">برای پوشه خود عنوان بنویسید.</string>
     <string name="folder_create">ایجاد پوشه</string>
+    <string name="save">ذخیره</string>
     <string name="delete">حذف</string>
     <string name="cancel">انصراف</string>
 </resources>
