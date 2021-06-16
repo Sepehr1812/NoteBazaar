@@ -21,4 +21,19 @@ object DialogHelper {
             .create()
             .show()
     }
+
+    fun AppCompatActivity.showCreateFolderDialog(onConfirmSelectedListener: AdapterView.OnItemSelectedListener) {
+        AlertDialog.Builder(this)
+            .setView(
+                this.layoutInflater.inflate(
+                    R.layout.dialog_new_folder,
+                    this.findViewById(R.id.coordinator_layout),
+                    false
+                )
+            )
+            .setOnItemSelectedListener(onConfirmSelectedListener)
+            .setCancelable(true)
+            .create()
+            .show()
+    }
 }

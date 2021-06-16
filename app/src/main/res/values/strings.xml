@@ -4,9 +4,14 @@
     <string name="note_list_title">یادداشت‌ها</string>
     <string name="note_date">۱۸ اردیبهشت ۱۴۰۰</string>
     <string name="note_title_hint">عنوان یادداشت</string>
+    <string name="folder_title_hint">عنوان پوشه</string>
     <string name="note_hint">یادداشت</string>
     <string name="note_delete">حذف یادداشت</string>
     <string name="note_delete_content">آیا از حذف این یادداشت اطمینان دارید؟</string>
+    <string name="folder_edit_name">تغییر عنوان پوشه</string>
+    <string name="folder_new">پوشه جدید</string>
+    <string name="folder_new_content">برای پوشه خود عنوان بنویسید.</string>
+    <string name="folder_create">ایجاد پوشه</string>
     <string name="delete">حذف</string>
     <string name="cancel">انصراف</string>
 </resources>

@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editViewNoteTitle"
+        android:id="@+id/editTextNoteTitle"
         style="@style/TextAppearance.AppCompat.Title.Bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
         tools:ignore="LabelFor" />
 
     <EditText
-        android:id="@+id/textViewNoteContent"
+        android:id="@+id/editTextNoteContent"
         style="@style/TextAppearance.AppCompat.Content"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_0"
@@ -77,7 +77,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editViewNoteTitle"
+        app:layout_constraintTop_toBottomOf="@id/editTextNoteTitle"
         tools:ignore="LabelFor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

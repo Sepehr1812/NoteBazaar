@@ -33,14 +33,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf38b75e-e0db-4598-b0d5-f3afd1cf4635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/dialogs/DialogHelper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_confirm.xml" afterDir="false" />
+    <list default="true" id="cf38b75e-e0db-4598-b0d5-f3afd1cf4635" name="Default Changelist" comment="dialog_confirm created.">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_new_folder.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/dialogs/DialogHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/dialogs/DialogHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_note.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_note.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623862702690</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="dialog_confirm created.">
+      <created>1623865188269</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623865188269</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,7 +264,8 @@
     <MESSAGE value="initial commit." />
     <MESSAGE value="NoteListFragment created." />
     <MESSAGE value="NoteFragment created." />
-    <option name="LAST_COMMIT_MESSAGE" value="NoteFragment created." />
+    <MESSAGE value="dialog_confirm created." />
+    <option name="LAST_COMMIT_MESSAGE" value="dialog_confirm created." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -283,18 +291,18 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="570" y="311" width="824" height="491" key="AndroidCreateResourceDirectoryDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623859312419" />
-    <state x="570" y="311" width="824" height="491" key="AndroidCreateResourceFileDialog" timestamp="1623863183712">
+    <state x="570" y="311" width="824" height="491" key="AndroidCreateResourceFileDialog" timestamp="1623866184471">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="570" y="311" width="824" height="491" key="AndroidCreateResourceFileDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623863183712" />
-    <state x="803" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog" timestamp="1623861067838">
+    <state x="570" y="311" width="824" height="491" key="AndroidCreateResourceFileDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623866184471" />
+    <state x="803" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog" timestamp="1623866150242">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="803" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623861067838" />
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1623862702624">
+    <state x="803" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623866150242" />
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1623866304933">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1623862702624" />
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1623866304933" />
     <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1623852978120">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
