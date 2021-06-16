@@ -33,7 +33,22 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf38b75e-e0db-4598-b0d5-f3afd1cf4635" name="Default Changelist" comment="initial commit." />
+    <list default="true" id="cf38b75e-e0db-4598-b0d5-f3afd1cf4635" name="Default Changelist" comment="initial commit.">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/fragments/NoteListFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_back.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_more.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_note_list.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/main_nav.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,6 +88,16 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
+        <option value="navigationResourceFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -91,6 +116,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="VirtualDevicePath@/home/sepehr/.android/avd/Pixel_4_API_29.avd" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-06-16T12:17:04.371930Z" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
@@ -183,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623847351654</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit.">
+      <created>1623848198358</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623848198358</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +241,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -231,26 +265,50 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="591" y="355" width="782" height="403" key="#com.intellij.fileTypes.FileTypeChooser/54.27.1866.1053@54.27.1866.1053" timestamp="1623847768570" />
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1623847911177">
+    <state x="154" y="127" width="1666" height="853" key="AVDManager" timestamp="1623850550109">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1623847911177" />
-    <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1623847264009">
+    <state x="154" y="127" width="1666" height="853" key="AVDManager/54.27.1866.1053@54.27.1866.1053" timestamp="1623850550109" />
+    <state x="570" y="311" width="824" height="491" key="AndroidCreateResourceDirectoryDialog" timestamp="1623859312419">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl/54.27.1866.1053@54.27.1866.1053" timestamp="1623847264009" />
+    <state x="570" y="311" width="824" height="491" key="AndroidCreateResourceDirectoryDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623859312419" />
+    <state x="570" y="311" width="824" height="491" key="AndroidCreateResourceFileDialog" timestamp="1623859346869">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="570" y="311" width="824" height="491" key="AndroidCreateResourceFileDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623859346869" />
+    <state x="803" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog" timestamp="1623853176080">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="803" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623853176080" />
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1623848629160">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1623848629160" />
+    <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1623852978120">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl/54.27.1866.1053@54.27.1866.1053" timestamp="1623852978120" />
+    <state x="231" y="121" width="1492" height="879" key="MergeDialog" timestamp="1623848224831">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="231" y="121" width="1492" height="879" key="MergeDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623848224831" />
+    <state x="618" y="316" width="728" height="482" key="MultipleFileMergeDialog" timestamp="1623848224834">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="618" y="316" width="728" height="482" key="MultipleFileMergeDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623848224834" />
     <state x="476" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1623845680548">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="476" y="188" width="1022" height="737" key="SettingsEditor/54.27.1866.1053@54.27.1866.1053" timestamp="1623845680548" />
-    <state x="582" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1623847633777">
+    <state x="582" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1623848639192">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="582" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/54.27.1866.1053@54.27.1866.1053" timestamp="1623847633777" />
-    <state x="768" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623848140428">
+    <state x="582" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/54.27.1866.1053@54.27.1866.1053" timestamp="1623848639192" />
+    <state x="768" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623848610003">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="768" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/54.27.1866.1053@54.27.1866.1053" timestamp="1623848140428" />
+    <state x="768" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/54.27.1866.1053@54.27.1866.1053" timestamp="1623848610003" />
     <state x="699" y="247" width="566" height="619" key="git4idea.branch.GitSmartOperationDialog" timestamp="1623848085212">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
@@ -259,9 +317,9 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="791" y="465" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623847660634" />
-    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1623847870851">
+    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1623852317551">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1623847870851" />
+    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1623852317551" />
   </component>
 </project>
