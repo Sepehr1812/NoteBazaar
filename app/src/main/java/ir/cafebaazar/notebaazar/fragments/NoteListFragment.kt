@@ -5,8 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import dagger.hilt.android.AndroidEntryPoint
 import ir.cafebaazar.notebaazar.databinding.FragmentNoteListBinding
 
+@AndroidEntryPoint
 class NoteListFragment : Fragment() {
 
     private var _binding: FragmentNoteListBinding? = null
@@ -19,5 +21,10 @@ class NoteListFragment : Fragment() {
     ): View {
         _binding = FragmentNoteListBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

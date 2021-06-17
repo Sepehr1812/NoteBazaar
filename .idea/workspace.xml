@@ -34,10 +34,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf38b75e-e0db-4598-b0d5-f3afd1cf4635" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/NoteBazaarApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/Folder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/Note.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/entities/FolderEntity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/entities/NoteEntity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/mappers/FolderMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/mappers/NoteMapper.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/activities/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/fragments/NoteFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/fragments/NoteFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/fragments/NoteListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/fragments/NoteListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,9 +94,10 @@
       <list>
         <option value="valueResourceFile" />
         <option value="navigationResourceFile" />
-        <option value="Kotlin Object" />
-        <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -100,7 +112,6 @@
   <component name="ProjectId" id="1u1tusZ32WqPQtDMU6MZCCNzc2G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -116,6 +127,12 @@
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="ir.cafebaazar.notebaazar.data.models.mappers" />
+      <recent name="ir.cafebaazar.notebaazar.activities" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -263,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623936996190</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add viewBinding.">
+      <created>1623938558124</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1623938558124</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,7 +326,8 @@
     <MESSAGE value="some minor improvements in editTexts." />
     <MESSAGE value="create NoteFolderItemAdapter." />
     <MESSAGE value="add fab to fragment_note_list." />
-    <option name="LAST_COMMIT_MESSAGE" value="add fab to fragment_note_list." />
+    <MESSAGE value="add viewBinding." />
+    <option name="LAST_COMMIT_MESSAGE" value="add viewBinding." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -324,6 +349,10 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="761" y="272" width="442" height="576" key="#com.intellij.ide.util.MemberChooser/54.27.1866.1053@54.27.1866.1053" timestamp="1623871937753" />
+    <state x="737" y="342" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1623941452214">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="737" y="342" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623941452214" />
     <state x="154" y="127" width="1666" height="853" key="AVDManager" timestamp="1623850550109">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
@@ -340,10 +369,10 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="803" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623871050431" />
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1623936996139">
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1623938558080">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1623936996139" />
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1623938558080" />
     <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1623852978120">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
@@ -364,10 +393,10 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="582" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/54.27.1866.1053@54.27.1866.1053" timestamp="1623848639192" />
-    <state x="768" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623848610003">
+    <state x="768" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623940475363">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="768" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/54.27.1866.1053@54.27.1866.1053" timestamp="1623848610003" />
+    <state x="768" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/54.27.1866.1053@54.27.1866.1053" timestamp="1623940475363" />
     <state x="699" y="247" width="566" height="619" key="git4idea.branch.GitSmartOperationDialog" timestamp="1623848085212">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
