@@ -15,4 +15,6 @@
     <string name="save">ذخیره</string>
     <string name="delete">حذف</string>
     <string name="cancel">انصراف</string>
+    <string name="item_title">یادداشت</string>
+    <string name="item_subtitle">۱۰ روز پیش</string>
 </resources>

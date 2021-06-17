@@ -51,4 +51,18 @@
         <item name="fontFamily">@font/iransansmobile</item>
     </style>
 
+    <style name="TextAppearance.AppCompat.Title.AdapterTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">@dimen/dimen_18</item>
+        <item name="fontFamily">@font/iransansmobile</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Title.AdapterSubtitle">
+        <item name="color">@color/gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="lineHeight">@dimen/dimen_16</item>
+        <item name="fontFamily">@font/iransansmobile</item>
+    </style>
+
 </resources>
