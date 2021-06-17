@@ -34,21 +34,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf38b75e-e0db-4598-b0d5-f3afd1cf4635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/NoteBazaarApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/Folder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/Note.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/entities/FolderEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/entities/NoteEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/mappers/FolderMapper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/mappers/NoteMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/db/ApplicationDatabase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/db/FolderDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/db/NoteDao.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/activities/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/fragments/NoteFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/fragments/NoteFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/fragments/NoteListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/fragments/NoteListFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/entities/FolderEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/entities/FolderEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/entities/NoteEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/entities/NoteEntity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,9 +86,10 @@
         <option value="valueResourceFile" />
         <option value="navigationResourceFile" />
         <option value="layoutResourceFile" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -287,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623938558124</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add hilt and models.">
+      <created>1623941528947</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1623941528947</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,7 +326,8 @@
     <MESSAGE value="create NoteFolderItemAdapter." />
     <MESSAGE value="add fab to fragment_note_list." />
     <MESSAGE value="add viewBinding." />
-    <option name="LAST_COMMIT_MESSAGE" value="add viewBinding." />
+    <MESSAGE value="add hilt and models." />
+    <option name="LAST_COMMIT_MESSAGE" value="add hilt and models." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -369,10 +369,10 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="803" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623871050431" />
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1623938558080">
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1623941528874">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1623938558080" />
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1623941528874" />
     <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1623852978120">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
@@ -393,6 +393,10 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="582" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/54.27.1866.1053@54.27.1866.1053" timestamp="1623848639192" />
+    <state x="597" y="167" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1623942823783">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="597" y="167" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/54.27.1866.1053@54.27.1866.1053" timestamp="1623942823783" />
     <state x="768" y="468" width="438" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1623940475363">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
