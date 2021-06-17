@@ -9,7 +9,7 @@
     </style>
 
     <style name="TextAppearance.AppCompat.Date">
-        <item name="color">@color/gray</item>
+        <item name="color">@color/grey</item>
         <item name="android:textSize">12sp</item>
         <item name="lineHeight">@dimen/dimen_20</item>
         <item name="fontFamily">@font/iransansmobile</item>
@@ -59,7 +59,7 @@
     </style>
 
     <style name="TextAppearance.AppCompat.Title.AdapterSubtitle">
-        <item name="color">@color/gray</item>
+        <item name="color">@color/grey</item>
         <item name="android:textSize">12sp</item>
         <item name="lineHeight">@dimen/dimen_16</item>
         <item name="fontFamily">@font/iransansmobile</item>

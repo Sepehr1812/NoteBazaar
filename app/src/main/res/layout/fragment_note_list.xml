@@ -59,9 +59,52 @@
         tools:ignore="ContentDescription" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNoteList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/dimen_72"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNoteListPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:src="@drawable/ic_plus"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNoteListFolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:visibility="gone"
+        app:backgroundTint="@color/white"
+        app:fabCustomSize="@dimen/dimen_48"
+        app:layout_constraintBottom_toTopOf="@id/fabNoteListPlus"
+        app:layout_constraintEnd_toEndOf="@id/fabNoteListPlus"
+        app:layout_constraintStart_toStartOf="@id/fabNoteListPlus"
+        app:srcCompat="@drawable/ic_folder_grey"
+        app:tint="@color/grey"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNoteListNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:visibility="gone"
+        app:backgroundTint="@color/white"
+        app:fabCustomSize="@dimen/dimen_48"
+        app:layout_constraintBottom_toTopOf="@id/fabNoteListFolder"
+        app:layout_constraintEnd_toEndOf="@id/fabNoteListPlus"
+        app:layout_constraintStart_toStartOf="@id/fabNoteListPlus"
+        app:srcCompat="@drawable/ic_note_grey"
+        app:tint="@color/grey"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -34,15 +34,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf38b75e-e0db-4598-b0d5-f3afd1cf4635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/adapters/NoteFolderItemAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_folder.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_note.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_note_folder_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_folder_grey.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_note_grey.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_plus.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_note.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_note.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_note_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_note_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -255,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623869775464</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="create NoteFolderItemAdapter.">
+      <created>1623928117707</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623928117707</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,7 +297,8 @@
     <MESSAGE value="dialog_new_folder created." />
     <MESSAGE value="dialog_edit_folder created." />
     <MESSAGE value="some minor improvements in editTexts." />
-    <option name="LAST_COMMIT_MESSAGE" value="some minor improvements in editTexts." />
+    <MESSAGE value="create NoteFolderItemAdapter." />
+    <option name="LAST_COMMIT_MESSAGE" value="create NoteFolderItemAdapter." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -330,10 +336,10 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="803" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623871050431" />
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1623869775408">
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1623928117567">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1623869775408" />
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1623928117567" />
     <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1623852978120">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
