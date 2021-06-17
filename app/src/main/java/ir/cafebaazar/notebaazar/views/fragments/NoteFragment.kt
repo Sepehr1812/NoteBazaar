@@ -11,7 +11,8 @@ import ir.cafebaazar.notebaazar.databinding.FragmentNoteBinding
 @AndroidEntryPoint
 class NoteFragment : Fragment() {
 
-    private var _binding: FragmentNoteBinding? = null
+//    private val noteViewModel: NoteViewModel by viewModels { defaultViewModelProviderFactory }
+private var _binding: FragmentNoteBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
