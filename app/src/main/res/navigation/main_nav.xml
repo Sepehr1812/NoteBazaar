@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/noteListFragment"
-        android:name="ir.cafebaazar.notebaazar.fragments.NoteListFragment"
+        android:name="ir.cafebaazar.notebaazar.views.fragments.NoteListFragment"
         android:label="NoteListFragment"
         tools:layout="@layout/fragment_note_list">
 
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/noteFragment"
-        android:name="ir.cafebaazar.notebaazar.fragments.NoteFragment"
+        android:name="ir.cafebaazar.notebaazar.views.fragments.NoteFragment"
         android:label="NoteFragment"
         tools:layout="@layout/fragment_note" />
 

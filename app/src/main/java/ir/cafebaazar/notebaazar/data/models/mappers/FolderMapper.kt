@@ -5,15 +5,19 @@ import ir.cafebaazar.notebaazar.data.models.entities.FolderEntity
 
 object FolderMapper {
 
-    fun Folder.mapToEntity() = FolderEntity(
-        this.id,
-        this.title,
-        this.createTime
-    )
+    fun mapToEntity(folder: Folder) = folder.run {
+        FolderEntity(
+            this.id,
+            this.title,
+            this.createTime
+        )
+    }
 
-    fun FolderEntity.mapFromEntity() = Folder(
-        this.id,
-        this.title,
-        this.createTime
-    )
+    fun mapFromEntity(folderEntity: FolderEntity) = folderEntity.run {
+        Folder(
+            this.id,
+            this.title,
+            this.createTime
+        )
+    }
 }

@@ -1,4 +1,4 @@
-package ir.cafebaazar.notebaazar.activities
+package ir.cafebaazar.notebaazar.views.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

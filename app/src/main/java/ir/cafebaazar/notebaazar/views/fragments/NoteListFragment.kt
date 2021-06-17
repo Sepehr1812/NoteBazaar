@@ -1,4 +1,4 @@
-package ir.cafebaazar.notebaazar.fragments
+package ir.cafebaazar.notebaazar.views.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,12 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import dagger.hilt.android.AndroidEntryPoint
-import ir.cafebaazar.notebaazar.databinding.FragmentNoteBinding
+import ir.cafebaazar.notebaazar.databinding.FragmentNoteListBinding
 
 @AndroidEntryPoint
-class NoteFragment : Fragment() {
+class NoteListFragment : Fragment() {
 
-    private var _binding: FragmentNoteBinding? = null
+    private var _binding: FragmentNoteListBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -19,7 +19,7 @@ class NoteFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentNoteBinding.inflate(inflater, container, false)
+        _binding = FragmentNoteListBinding.inflate(inflater, container, false)
         return binding.root
     }
 

@@ -13,5 +13,5 @@ interface FolderDao {
     fun insertFolder(folderEntity: FolderEntity)
 
     @Query("SELECT * FROM folders ORDER BY createTime DESC")
-    fun getAllFolders(): FolderEntity
+    fun getAllFolders(): List<FolderEntity>
 }

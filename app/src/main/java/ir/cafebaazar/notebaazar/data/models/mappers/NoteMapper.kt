@@ -5,19 +5,23 @@ import ir.cafebaazar.notebaazar.data.models.entities.NoteEntity
 
 object NoteMapper {
 
-    fun Note.mapToEntity() = NoteEntity(
-        this.id,
-        this.title,
-        this.content,
-        this.createTime,
-        this.folderId
-    )
+    fun mapToEntity(note: Note) = note.run {
+        NoteEntity(
+            this.id,
+            this.title,
+            this.content,
+            this.createTime,
+            this.folderId
+        )
+    }
 
-    fun NoteEntity.mapFromEntity() = Note(
-        this.id,
-        this.title,
-        this.content,
-        this.createTime,
-        this.folderId
-    )
+    fun mapFromEntity(noteEntity: NoteEntity) = noteEntity.run {
+        Note(
+            this.id,
+            this.title,
+            this.content,
+            this.createTime,
+            this.folderId
+        )
+    }
 }

@@ -1,4 +1,4 @@
-package ir.cafebaazar.notebaazar.adapters
+package ir.cafebaazar.notebaazar.views.adapters
 
 import android.view.View
 import android.view.ViewGroup

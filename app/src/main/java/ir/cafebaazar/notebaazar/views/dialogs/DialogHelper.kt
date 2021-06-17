@@ -1,4 +1,4 @@
-package ir.cafebaazar.notebaazar.dialogs
+package ir.cafebaazar.notebaazar.views.dialogs
 
 import android.app.Activity
 import android.app.AlertDialog
