@@ -9,6 +9,7 @@
         android:id="@+id/groupFolderAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         app:constraint_referenced_ids="imageViewFolderBack, textViewNoteListFolderTitle, imageViewFolderMore" />
 
     <ImageView
@@ -31,7 +32,6 @@
         android:layout_marginTop="@dimen/dimen_14"
         android:layout_marginEnd="@dimen/dimen_16"
         android:text="@string/note_list_title"
-        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,6 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/dimen_72"
+        android:clipToPadding="false"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

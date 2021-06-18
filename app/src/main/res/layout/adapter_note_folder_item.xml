@@ -8,7 +8,10 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:elevation="@dimen/dimen_4">
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:elevation="@dimen/dimen_4"
+        app:cardCornerRadius="@dimen/dimen_10"
+        app:cardUseCompatPadding="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

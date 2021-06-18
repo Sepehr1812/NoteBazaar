@@ -33,21 +33,20 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf38b75e-e0db-4598-b0d5-f3afd1cf4635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/heipers/DigitHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="cf38b75e-e0db-4598-b0d5-f3afd1cf4635" name="Default Changelist" comment="implement adding note.">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/NoteFolderItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/viewmodels/NoteListViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/AppModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/db/FolderDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/db/FolderDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/db/NoteDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/db/NoteDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/Folder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/Folder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/Note.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/data/models/Note.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/repositories/FolderRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/repositories/FolderRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/repositories/NoteRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/repositories/NoteRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/viewmodels/NoteViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/viewmodels/NoteViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/views/adapters/NoteFolderItemAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/views/adapters/NoteFolderItemAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/views/fragments/NoteFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/views/fragments/NoteFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/main_nav.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/main_nav.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/views/fragments/NoteListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ir/cafebaazar/notebaazar/views/fragments/NoteListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_note_folder_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_note_folder_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_note_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_note_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,10 +87,10 @@
         <option value="valueResourceFile" />
         <option value="navigationResourceFile" />
         <option value="layoutResourceFile" />
-        <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
       </list>
     </option>
   </component>
@@ -309,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623969746095</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="implement adding note.">
+      <created>1623975159999</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1623975159999</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,7 +359,8 @@
     <MESSAGE value="add database and dao." />
     <MESSAGE value="add repositories. repackage view classes." />
     <MESSAGE value="add hilt and safe args requirements." />
-    <option name="LAST_COMMIT_MESSAGE" value="add hilt and safe args requirements." />
+    <MESSAGE value="implement adding note." />
+    <option name="LAST_COMMIT_MESSAGE" value="implement adding note." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -399,30 +406,30 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="803" y="345" width="357" height="423" key="AndroidCreateXmlResourceDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623871050431" />
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1623969745982">
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2" timestamp="1624018276245">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1623969745982" />
+    <state x="592" y="130" width="780" height="853" key="CommitChangelistDialog2/54.27.1866.1053@54.27.1866.1053" timestamp="1624018276245" />
     <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl" timestamp="1623852978120">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="758" y="297" width="447" height="520" key="FileChooserDialogImpl/54.27.1866.1053@54.27.1866.1053" timestamp="1623852978120" />
-    <state width="1820" height="275" key="GridCell.Tab.0.bottom" timestamp="1623974738987">
+    <state width="1820" height="275" key="GridCell.Tab.0.bottom" timestamp="1624022053738">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1820" height="275" key="GridCell.Tab.0.bottom/54.27.1866.1053@54.27.1866.1053" timestamp="1623974738987" />
-    <state width="1820" height="275" key="GridCell.Tab.0.center" timestamp="1623974738986">
+    <state width="1820" height="275" key="GridCell.Tab.0.bottom/54.27.1866.1053@54.27.1866.1053" timestamp="1624022053738" />
+    <state width="1820" height="275" key="GridCell.Tab.0.center" timestamp="1624022053738">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1820" height="275" key="GridCell.Tab.0.center/54.27.1866.1053@54.27.1866.1053" timestamp="1623974738986" />
-    <state width="1820" height="275" key="GridCell.Tab.0.left" timestamp="1623974738986">
+    <state width="1820" height="275" key="GridCell.Tab.0.center/54.27.1866.1053@54.27.1866.1053" timestamp="1624022053738" />
+    <state width="1820" height="275" key="GridCell.Tab.0.left" timestamp="1624022053738">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1820" height="275" key="GridCell.Tab.0.left/54.27.1866.1053@54.27.1866.1053" timestamp="1623974738986" />
-    <state width="1820" height="275" key="GridCell.Tab.0.right" timestamp="1623974738987">
+    <state width="1820" height="275" key="GridCell.Tab.0.left/54.27.1866.1053@54.27.1866.1053" timestamp="1624022053738" />
+    <state width="1820" height="275" key="GridCell.Tab.0.right" timestamp="1624022053738">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state width="1820" height="275" key="GridCell.Tab.0.right/54.27.1866.1053@54.27.1866.1053" timestamp="1623974738987" />
+    <state width="1820" height="275" key="GridCell.Tab.0.right/54.27.1866.1053@54.27.1866.1053" timestamp="1624022053738" />
     <state x="231" y="121" width="1492" height="879" key="MergeDialog" timestamp="1623848224831">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
@@ -431,6 +438,10 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="618" y="316" width="728" height="482" key="MultipleFileMergeDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1623848224834" />
+    <state x="744" y="237" width="476" height="640" key="RollbackChangesDialog" timestamp="1624019142110">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="744" y="237" width="476" height="640" key="RollbackChangesDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1624019142110" />
     <state x="476" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1623845680548">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
@@ -463,9 +474,9 @@
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
     <state x="651" y="252" key="run.anything.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1623864550249" />
-    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1623971848084">
+    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1624019560963">
       <screen x="54" y="27" width="1866" height="1053" />
     </state>
-    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1623971848083" />
+    <state x="650" y="259" width="672" height="678" key="search.everywhere.popup/54.27.1866.1053@54.27.1866.1053" timestamp="1624019560963" />
   </component>
 </project>

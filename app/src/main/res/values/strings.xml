@@ -18,4 +18,6 @@
     <string name="item_title">یادداشت</string>
     <string name="item_subtitle">۱۰ روز پیش</string>
     <string name="note_saved_successfully">یادداشت ذخیره شد</string>
+    <string name="today">امروز</string>
+    <string name="days_ago">%1$s روز پیش</string>
 </resources>

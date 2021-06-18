@@ -23,7 +23,7 @@ import java.util.*
 @AndroidEntryPoint
 class NoteFragment : Fragment() {
 
-    private val noteViewModel: NoteViewModel by viewModels()
+    private val noteViewModel by viewModels<NoteViewModel>()
     private val args: NoteFragmentArgs by navArgs()
     private var _binding: FragmentNoteBinding? = null
     private val binding get() = _binding!!

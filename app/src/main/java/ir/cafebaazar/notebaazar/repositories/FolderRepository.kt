@@ -7,9 +7,9 @@ import javax.inject.Inject
 
 class FolderRepository @Inject constructor(private val folderDao: FolderDao) {
 
-    suspend fun insertNote(folder: Folder) {
+    suspend fun insertFolder(folder: Folder) {
         folderDao.insertFolder(FolderMapper.mapToEntity(folder))
     }
 
-    suspend fun getAllNotes() = folderDao.getAllFolders().map { FolderMapper.mapFromEntity(it) }
+    suspend fun getAllFolders() = folderDao.getAllFolders().map { FolderMapper.mapFromEntity(it) }
 }
