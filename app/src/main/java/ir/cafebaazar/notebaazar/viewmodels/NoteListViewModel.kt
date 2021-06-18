@@ -27,4 +27,10 @@ class NoteListViewModel @Inject constructor(
             getListResponse.value = list.sortedWith(compareByDescending { it.createTime })
         }
     }
+
+    fun getNotesInFolder(folderId: Int) {
+        viewModelScope.launch {
+            getListResponse.value = noteRepository.getNotesByFolderId(folderId)
+        }
+    }
 }

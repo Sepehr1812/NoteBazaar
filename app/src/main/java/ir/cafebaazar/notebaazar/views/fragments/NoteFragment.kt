@@ -30,15 +30,6 @@ class NoteFragment : Fragment() {
 
     private var note: Note? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        args.folderId.let {
-            if (it != -1)
-                noteViewModel.getNoteById(it)
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -85,16 +76,19 @@ class NoteFragment : Fragment() {
             val persianDate = PersianDate(it.createTime)
             binding.textViewNoteDate.text = DigitHelper
                 .convertDigitsToPersian(PersianDateFormat("j F y").format(persianDate))
+            binding.editTextNoteTitle.setText(it.title)
+            binding.editTextNoteContent.setText(it.content)
         }
     }
 
     private fun saveNote() {
         noteViewModel.insertNote(
             Note(
+                id = args.noteId.let { if (it != -1) it else null },
                 title = binding.editTextNoteTitle.text.toString(),
                 content = binding.editTextNoteContent.text.toString(),
                 createTime = note?.createTime ?: Date().time,
-                folderId = args.folderId.let { if (it != -1) it else null }
+                folderId = note?.folderId
             )
         )
 

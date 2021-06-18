@@ -5,15 +5,20 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import ir.cafebaazar.notebaazar.R
 import ir.cafebaazar.notebaazar.data.models.Folder
+import ir.cafebaazar.notebaazar.data.models.Note
 import ir.cafebaazar.notebaazar.data.models.NoteFolderItem
 import ir.cafebaazar.notebaazar.heipers.DigitHelper
 import java.util.*
 
-class NoteFolderItemAdapter(private val noteFolderItemList: List<NoteFolderItem>) :
+class NoteFolderItemAdapter(
+    private val noteFolderItemList: List<NoteFolderItem>,
+    private val onItemClickListener: OnItemClickListener
+) :
     RecyclerView.Adapter<NoteFolderItemAdapter.MyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder =
@@ -42,14 +47,26 @@ class NoteFolderItemAdapter(private val noteFolderItemList: List<NoteFolderItem>
                     DigitHelper.convertDigitsToPersian(it.toString())
                 )
             }
+
+        holder.cardViewItem.setOnClickListener {
+            if (item is Note)
+                onItemClickListener.onNoteClickListener(item.id ?: -1)
+            else onItemClickListener.onFolderClickListener(item.id ?: -1)
+        }
     }
 
     override fun getItemCount(): Int = noteFolderItemList.size
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imageViewItemIcon = itemView.findViewById<ImageView>(R.id.imageViewItemIcon)
-        val textViewItemTitle = itemView.findViewById<TextView>(R.id.textViewItemTitle)
-        val textViewItemSubtitle = itemView.findViewById<TextView>(R.id.textViewItemSubtitle)
-        val imageViewItemMore = itemView.findViewById<ImageView>(R.id.imageViewItemMore)
+        val cardViewItem: CardView = itemView.findViewById(R.id.cardViewItem)
+        val imageViewItemIcon: ImageView = itemView.findViewById(R.id.imageViewItemIcon)
+        val textViewItemTitle: TextView = itemView.findViewById(R.id.textViewItemTitle)
+        val textViewItemSubtitle: TextView = itemView.findViewById(R.id.textViewItemSubtitle)
+        val imageViewItemMore: ImageView = itemView.findViewById(R.id.imageViewItemMore)
+    }
+
+    interface OnItemClickListener {
+        fun onNoteClickListener(noteId: Int)
+        fun onFolderClickListener(folderId: Int)
     }
 }

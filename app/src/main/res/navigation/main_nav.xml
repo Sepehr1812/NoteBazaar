@@ -14,28 +14,16 @@
         <action
             android:id="@+id/action_noteListFragment_to_noteFragment"
             app:destination="@id/noteFragment"
-            app:popUpTo="@layout/fragment_note_list">
-
-            <argument
-                android:name="noteId"
-                android:defaultValue="-1"
-                app:argType="integer" />
-
-            <argument
-                android:name="folderId"
-                android:defaultValue="-1"
-                app:argType="integer" />
-        </action>
+            app:popUpTo="@layout/fragment_note_list" />
 
         <action
             android:id="@+id/action_noteListFragment_self"
-            app:destination="@id/noteListFragment">
+            app:destination="@id/noteListFragment" />
 
-            <argument
-                android:name="folderId"
-                android:defaultValue="-1"
-                app:argType="integer" />
-        </action>
+        <argument
+            android:name="folderId"
+            android:defaultValue="-1"
+            app:argType="integer" />
     </fragment>
 
     <fragment
@@ -46,11 +34,6 @@
 
         <argument
             android:name="noteId"
-            android:defaultValue="-1"
-            app:argType="integer" />
-
-        <argument
-            android:name="folderId"
             android:defaultValue="-1"
             app:argType="integer" />
     </fragment>

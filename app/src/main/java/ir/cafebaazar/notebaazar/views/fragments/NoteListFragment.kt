@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
 import ir.cafebaazar.notebaazar.databinding.FragmentNoteListBinding
@@ -14,9 +15,10 @@ import ir.cafebaazar.notebaazar.viewmodels.NoteListViewModel
 import ir.cafebaazar.notebaazar.views.adapters.NoteFolderItemAdapter
 
 @AndroidEntryPoint
-class NoteListFragment : Fragment() {
+class NoteListFragment : Fragment(), NoteFolderItemAdapter.OnItemClickListener {
 
     private val noteListViewModel by viewModels<NoteListViewModel>()
+    private val args by navArgs<NoteListFragmentArgs>()
     private var _binding: FragmentNoteListBinding? = null
     private val binding get() = _binding!!
 
@@ -35,7 +37,11 @@ class NoteListFragment : Fragment() {
         initialViews()
         subscribeLiveData()
 
-        noteListViewModel.getNoteAndFolderList()
+        args.folderId.also {
+            if (it == -1) // user is in the first page
+                noteListViewModel.getNoteAndFolderList()
+            else noteListViewModel.getNotesInFolder(it)
+        }
     }
 
     private fun initialViews() {
@@ -59,10 +65,19 @@ class NoteListFragment : Fragment() {
 
     private fun subscribeLiveData() {
         noteListViewModel.getListResponse.observe(viewLifecycleOwner) {
-            println(it)
-            binding.recyclerViewNoteList.adapter = NoteFolderItemAdapter(it)
+            binding.recyclerViewNoteList.adapter = NoteFolderItemAdapter(it, this)
             binding.recyclerViewNoteList.layoutManager = LinearLayoutManager(requireContext())
         }
+    }
+
+    override fun onNoteClickListener(noteId: Int) {
+        findNavController().navigate(
+            NoteListFragmentDirections.actionNoteListFragmentToNoteFragment(noteId)
+        )
+    }
+
+    override fun onFolderClickListener(folderId: Int) {
+        findNavController().navigate(NoteListFragmentDirections.actionNoteListFragmentSelf(folderId))
     }
 
     override fun onDestroyView() {
