@@ -10,17 +10,17 @@ import ir.cafebaazar.notebaazar.data.models.entities.NoteEntity
 interface NoteDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertNote(noteEntity: NoteEntity)
+    suspend fun insertNote(noteEntity: NoteEntity)
 
     @Query("SELECT * FROM notes ORDER BY createTime DESC")
-    fun getAllNotes(): List<NoteEntity>
+    suspend fun getAllNotes(): List<NoteEntity>
 
     @Query("SELECT DISTINCT * FROM notes WHERE id = :noteId")
-    fun getNoteById(noteId: Int): NoteEntity
+    suspend fun getNoteById(noteId: Int): NoteEntity
 
     @Query("SELECT * FROM notes WHERE folderId = :folderId ORDER BY createTime DESC")
-    fun getNotesByFolderId(folderId: Int): List<NoteEntity>
+    suspend fun getNotesByFolderId(folderId: Int): List<NoteEntity>
 
     @Query("SELECT COUNT(*) FROM notes WHERE folderId = :folderId")
-    fun getNoteCountByFolderId(folderId: Int): Int
+    suspend fun getNoteCountByFolderId(folderId: Int): Int
 }

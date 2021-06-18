@@ -10,8 +10,8 @@ import ir.cafebaazar.notebaazar.data.models.entities.FolderEntity
 interface FolderDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertFolder(folderEntity: FolderEntity)
+    suspend fun insertFolder(folderEntity: FolderEntity)
 
     @Query("SELECT * FROM folders ORDER BY createTime DESC")
-    fun getAllFolders(): List<FolderEntity>
+    suspend fun getAllFolders(): List<FolderEntity>
 }

@@ -17,4 +17,5 @@
     <string name="cancel">انصراف</string>
     <string name="item_title">یادداشت</string>
     <string name="item_subtitle">۱۰ روز پیش</string>
+    <string name="note_saved_successfully">یادداشت ذخیره شد</string>
 </resources>

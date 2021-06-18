@@ -14,7 +14,18 @@
         <action
             android:id="@+id/action_noteListFragment_to_noteFragment"
             app:destination="@id/noteFragment"
-            app:popUpTo="@layout/fragment_note_list" />
+            app:popUpTo="@layout/fragment_note_list">
+
+            <argument
+                android:name="noteId"
+                android:defaultValue="-1"
+                app:argType="integer" />
+
+            <argument
+                android:name="folderId"
+                android:defaultValue="-1"
+                app:argType="integer" />
+        </action>
 
         <action
             android:id="@+id/action_noteListFragment_self"
@@ -32,6 +43,11 @@
         android:name="ir.cafebaazar.notebaazar.views.fragments.NoteFragment"
         android:label="NoteFragment"
         tools:layout="@layout/fragment_note">
+
+        <argument
+            android:name="noteId"
+            android:defaultValue="-1"
+            app:argType="integer" />
 
         <argument
             android:name="folderId"

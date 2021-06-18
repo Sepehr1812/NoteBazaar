@@ -6,9 +6,10 @@ import ir.cafebaazar.notebaazar.data.models.mappers.FolderMapper
 import javax.inject.Inject
 
 class FolderRepository @Inject constructor(private val folderDao: FolderDao) {
-    fun insertNote(folder: Folder) {
+
+    suspend fun insertNote(folder: Folder) {
         folderDao.insertFolder(FolderMapper.mapToEntity(folder))
     }
 
-    fun getAllNotes() = folderDao.getAllFolders().map { FolderMapper.mapFromEntity(it) }
+    suspend fun getAllNotes() = folderDao.getAllFolders().map { FolderMapper.mapFromEntity(it) }
 }
